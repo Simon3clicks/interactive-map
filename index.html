@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="robots" content="none">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!------ Docs ------>
+<!--jQuery (v1.12.4) - https://code.jquery.com/-->
+<!--jQuery imagemapster - http://www.outsharked.com/imagemapster/-->
+
+
+<!------ Case ------>
+<!--1. Op de eerste hover van een area wil de tooltip soms helemaal verkeerd geplaatst worden, zoals rechtsonder de area. Op de tweede hover wordt de tooltip weer "goed geplaatst"-->
+<!--2. De tooltip moet verticaal altijd net boven de area komen, en horizontaal op 50% breedte van de (geslecteerde) area.-->
+
+<section class="section" id="winkels">
+    <div class="row" id="finder-border">
+        <div class="col-md-12">
+            <div class="row background-finder padding-finder">
+                <div class="col-md-offset-2 col-md-6 margin-bottom-xs">
+                    <img src="images/map.png" class="img-responsive margin-center"
+                         usemap="#finder-map" id="finder-image"/>
+                    <map name="finder-map" id="finder-map">
+                        <area data-key="1" name="1" href="#" shape="poly"
+                              coords="140,779,135,739,275,714,282,766"/>
+                        <area data-key="2" name="2" href="http://www.bibelot.nl/" target="_blank" shape="poly"
+                              coords="288,764,282,712,442,684,446,746"/>
+                        <area data-key="3" name="3" href="#" shape="poly"
+                              coords="450,745,450,745,446,681,583,657,597,727"/>
+                        <area data-key="4" name="4" href="#" shape="poly"
+                              coords="604,725,590,654,594,653,572,531,642,509,646,529,672,525,704,717"/>
+                        <area data-key="5" name="5" href="http://www.dehoogheerlijkheid.nl/" target="_blank"
+                              shape="poly"
+                              coords="687,572,780,558,815,708,711,715"/>
+                        <area data-key="6" name="6" href="http://www.delifrance-oudbeijerland.nl/" target="_blank"
+                              shape="poly"
+                              coords="820,702,860,694,857,673,899,661,859,484,683,518,692,566,786,552"/>
+                        <area data-key="7" name="7" href="#" target="_blank" shape="poly"
+                              coords="655,519,639,416,844,373,857,481"/>
+                        <area data-key="8" name="8" href="#" target="_blank" shape="poly"
+                              coords="988,416,982,241,1012,215,1224,300,1221,385,1067,374,1067,419"/>
+                        <area data-key="9" name="9" href="#" target="_blank" shape="poly"
+                              coords="1075,383,1230,396,1216,724,1056,709,1060,692,1010,688,1000,457,1078,462,1081,428,1076,428"/>
+                        <area data-key="10" name="10" href="#" target="_blank" shape="poly"
+                              coords="1242,299,1340,339,1315,717,1308,721,1227,713"/>
+                        <area data-key="11" name="11" href="#" target="_blank" shape="poly"
+                              coords="1351,340,1447,378,1428,684,1409,687,1389,693,1369,698,1352,704,1339,709,1325,717"/>
+                        <area data-key="12" name="12" href="https://www.witteveen.eu/nl/" target="_blank" shape="poly"
+                              coords="1436,684,1466,680,1476,679,1494,680,1511,681,1529,684,1546,687,1551,505,1532,499,1537,409,1457,378"/>
+                        <area data-key="13" name="13" href="#" target="_blank" shape="poly"
+                              coords="1555,683,1602,695,1628,680,1664,581,1559,571"/>
+                        <area data-key="14" name="14" href="https://www.lucardi.nl/nl-nl/juweliers/oud-beijerland"
+                              target="_blank" shape="poly"
+                              coords="1664,574,1670,450,1546,402,1541,489,1561,495,1560,564"/>
+                        <area data-key="15" name="15" href="#" target="_blank" shape="poly"
+                              coords="1706,307,1725,246,1786,267,1767,326"/>
+                        <area data-key="16" name="16" href="https://www.zoetchocolaterie.nl/" target="_blank"
+                              shape="poly"
+                              coords="1790,334,1850,353,1866,294,1809,273"/>
+                        <area data-key="17" name="17" href="#" target="_blank" shape="poly"
+                              coords="1786,496,1878,526,1828,762,1656,749,1708,588"/>
+                        <area data-key="18" name="18" href="http://www.etos.nl/" target="_blank" shape="poly"
+                              coords="1565,828,1592,822,1609,816,1633,802,1646,788,1655,759,1828,771,1815,828,1804,1055,1738,1049,1722,1165,1610,1158,1619,1040"/>
+                        <area data-key="19" name="19" href="https://www.shoeby.nl/" target="_blank" shape="poly"
+                              coords="1555,830,1516,836,1422,831,1406,1143,1602,1157,1610,1040"/>
+                        <area data-key="20" name="20" href="#" target="_blank" shape="poly"
+                              coords="1313,789,1330,802,1341,808,1351,812,1360,816,1371,820,1380,824,1392,827,1410,831,1412,831,1397,1143,1291,1136"/>
+                        <area data-key="21" name="21" href="#" target="_blank" shape="poly"
+                              coords="1207,775,1296,782,1304,791,1281,1135,1185,1128"/>
+                        <area data-key="22" name="22" href="http://www.spotlight-fashion.nl/" target="_blank"
+                              shape="poly"
+                              coords="1052,765,1198,776,1180,1036,1122,1033,1125,938,1095,938,1095,897,1012,895,1012,779,1049,792"/>
+                        <area data-key="23" name="23" href="#" target="_blank" shape="poly"
+                              coords="945,892,920,782,877,790,874,770,712,786,736,810,744,866,711,877,732,961,850,939,845,910"/>
+                        <area data-key="24" name="24" href="#" target="_blank" shape="poly"
+                              coords="732,861,724,805,698,783,520,801,532,886,694,856,698,873"/>
+                        <area data-key="25" name="25" href="http://www.bibelot.nl/" target="_blank" shape="poly"
+                              coords="512,806,526,891,346,923,334,824"/>
+                        <area data-key="26" name="26" href="#" target="_blank" shape="poly"
+                              coords="329,844,338,922,137,944,153,868"/>
+                        <area data-key="27" name="27" href="#" target="_blank" shape="poly"
+                              coords="1705,310,1766,330,1748,380,1689,360"/>
+                        <area data-key="28" name="28" href="#" target="_blank" shape="poly"
+                              coords="1788,337,1848,357,1836,409,1773,385"/>
+                        <area data-key="99" name="99" href="https://www.p1.nl/parkeren/p1-parking-de-veiling"
+                              target="_blank" shape="poly"
+                              coords="1345,1165,1340,1247,1424,1254,1428,1171"/>
+                    </map>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/plattegrond_knop.png"
+                         class="img-responsive img-map-button" alt="Plattegrond knop">
+                </div>
+            </div>
+            <div class="row background-finder">
+                <div class="col-md-11 col-md-offset-2">
+                    <p class='p-finder-xs hidden-sm hidden-md hidden-lg'><i>Op deze handige plattegrond zie je alle
+                        winkeliers en ondernemers in 1 oogwenk. Veel
+                        winkelplezier! Heb je zelf zin om te ondernemen in De Veilingpassage? Kijk dan eens naar de
+                        beschikbare locaties op deze kaart en neem contact op met de makelaar voor meer informatie. </i>
+                    </p>
+
+                    <ul class="width-medium2">
+                        <li class="finder-list" id="finder-1"><a href="">1. Goudsmederij Warchal</a></li>
+                        <li class="finder-list" id="finder-2"><a href="http://www.bibelot.nl/" target="_blank">2.
+                            Kadoshop Bibelot</a></li>
+                        <li class="finder-list" id="finder-3"><a href="">3. Veilingpassage 5</a></li>
+                        <li class="finder-list" id="finder-4"><a href="">4. De Goudsbloem</a></li>
+                        <li class="finder-list" id="finder-5"><a href="http://www.dehoogheerlijkheid.nl/"
+                                                                 target="_blank">5. De Hoogheerlijkheid</a></li>
+                        <li class="finder-list" id="finder-6"><a href="http://www.delifrance-oudbeijerland.nl/"
+                                                                 target="_blank">6. Delifrance</a></li>
+                        <li class="finder-list" id="finder-7"><a href="">7. Reisbureau Oud-Beijerland</a></li>
+                    </ul>
+                    <ul class="width-medium">
+                        <li class="finder-list" id="finder-8"><a href="">8. Wilhelminaplein 1</a></li>
+                        <li class="finder-list" id="finder-9"><a href="">9. Veilingpassage 13-15</a></li>
+                        <li class="finder-list" id="finder-10"><a href="https://www.facebook.com/offlineoudbeijerland"
+                                                                  target="_blank">10. Vero Moda</a></li>
+                        <li class="finder-list" id="finder-11"><a href="">11. Veilingpassage 19</a></li>
+                        <li class="finder-list" id="finder-12"><a href="https://www.witteveen.eu/nl/" target="_blank">12.
+                            Witteveen mode</a></li>
+                        <li class="finder-list" id="finder-13"><a href="">13. Veilingpassage 23</a></li>
+                        <li class="finder-list" id="finder-14"><a
+                                href="https://www.lucardi.nl/nl-nl/juweliers/oud-beijerland" target="_blank">14.
+                            Lucardi</a></li>
+                    </ul>
+                    <ul class="width-medium">
+                        <li class="finder-list" id="finder-15"><a href="">15. Oostdijk 48</a></li>
+                        <li class="finder-list" id="finder-16"><a href="https://www.zoetchocolaterie.nl/"
+                                                                  target="_blank">16. Zoet Chocolaterie</a></li>
+                        <li class="finder-list" id="finder-17"><a href="">17. Bart Smit</a></li>
+                        <li class="finder-list" id="finder-18"><a href="http://www.etos.nl/" target="_blank">18.
+                            Etos</a></li>
+                        <li class="finder-list" id="finder-19"><a href="https://www.shoeby.nl/" target="_blank">19.
+                            Shoeby</a></li>
+                        <li class="finder-list" id="finder-20"><a href="https://www.facebook.com/offlineoudbeijerland"
+                                                                  target="_blank">20. Dakota</a></li>
+                        <li class="finder-list" id="finder-21"><a href="">21. Veilingpassage 12</a></li>
+                    </ul>
+                    <ul class="width-big">
+                        <li class="finder-list" id="finder-22"><a href="http://www.spotlight-fashion.nl/"
+                                                                  target="blank">22. Spotlight Fashion</a></li>
+                        <li class="finder-list" id="finder-23"><a href="">23. Valentina</a></li>
+                        <li class="finder-list" id="finder-24"><a href="">24. Schoenmakerij Bas Schoonhoven</a></li>
+                        <li class="finder-list" id="finder-25"><a href="http://www.bibelot.nl/" target="_blank">25.
+                            Kadoshop Bibelot</a></li>
+                        <li class="finder-list" id="finder-26"><a href="">26. Veilingpassage 2A</a></li>
+                        <li class="finder-list" id="finder-27"><a href="">27. Custom Made</a></li>
+                        <li class="finder-list" id="finder-28"><a href="">28. Star Nails & Spa</a></li>
+                    </ul>
+                    <div class="space-20"></div>
+                    <p class='p-finder hidden-xs'><i>Op deze handige plattegrond zie je alle winkeliers en ondernemers
+                        in 1 oogwenk. Veel
+                        winkelplezier!</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Default jQuery (v1.12.4)-->
+<script src="js/jquery-1.12.4.min.js"></script>
+
+<!--Original (source) script-->
+<!--<script src="js/original.jquery.imagemapster.js"></script>-->
+
+<!--Edited script-->
+<script src="js/jquery.imagemapster.js"></script>
+
+<script>
+    $('#finder-image').mapster({
+        fill: true,
+        fillColor: 'ffffff',
+        fillOpacity: 0,
+        strokeWidth: 3,
+        singleSelect: false,
+        isSelectable: false,
+        scaleMap: true,
+        altImage: 'images/map.svg',
+        selected: true,
+        showToolTip: true,
+        toolTipContainer: '<div class="tooltip-wrapper"></div>',
+        mapKey: 'name',
+        render_highlight: {
+            fillOpacity: 1
+        },
+        onClick: function (data) {
+            data.e.preventDefault();
+            var target = $(this).attr('target');
+            if (target == '_blank') {
+                window.open($(this).attr('href'));
+            }
+            return false;
+        },
+        onMouseover: function (options) {
+            $("#finder-" + options.key).children().css('color', "#EF8000");
+            $("#finder-" + options.key).children().css('font-weight', "bold");
+
+        },
+        onMouseout: function (options) {
+            $("#finder-" + options.key).children().css('color', "black");
+            $("#finder-" + options.key).children().css('font-weight', "normal");
+
+        },
+        areas: [
+            {
+                key: '1',
+                toolTip: '<img src="images/finder/icon_kaart_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '2',
+                toolTip: '<img src="images/finder/icon_kaart_2.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '3',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '4',
+                toolTip: '<img src="images/finder/icon_kaart_0.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '5',
+                toolTip: '<img src="images/finder/icon_kaart_5.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '6',
+                toolTip: '<img src="images/finder/icon_kaart_6.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '7',
+                toolTip: '<img src="images/finder/icon_kaart_7.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '8',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '9',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '10',
+                toolTip: '<img src="images/finder/icon_kaart_10.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '11',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '12',
+                toolTip: '<img src="images/finder/icon_kaart_12.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '13',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '14',
+                toolTip: '<img src="images/finder/icon_kaart_14.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '15',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '16',
+                toolTip: '<img src="images/finder/icon_kaart_16.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '17',
+                toolTip: '<img src="images/finder/icon_kaart_0.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '18',
+                toolTip: '<img src="images/finder/icon_kaart_18.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '19',
+                toolTip: '<img src="images/finder/icon_kaart_19.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '20',
+                toolTip: '<img src="images/finder/icon_kaart_20.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '21',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '22',
+                toolTip: '<img src="images/finder/icon_kaart_22.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '23',
+                toolTip: '<img src="images/finder/icon_kaart_23.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '24',
+                toolTip: '<img src="images/finder/icon_kaart_0.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '25',
+                toolTip: '<img src="images/finder/icon_kaart_25.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '26',
+                toolTip: '<img src="images/finder/icon_huur_1.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '27',
+                toolTip: '<img src="images/finder/icon_kaart_27.png" class="img-responsive pop-image"><div style="visibility: hidden;height:15px; width:90px">Area</div>'
+            },
+            {
+                key: '28',
+                toolTip: '<img src="images/finder/icon_kaart_28.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px;">Area</div>'
+            },
+            {
+                key: '99',
+                toolTip: '<img src="images/finder/icon_kaart_99.png" class="img-responsive pop-image"><div style="visibility: hidden; height:15px; width:90px">Area</div>'
+            }
+        ]
+    });
+
+    $(".finder-list").hover(function (e) {
+                var id = $(this).attr('id');
+                var lastChar = id.split("-").pop();
+
+                if (e.type == "mouseenter") {
+                    $(this).children().css('color', "#EF8000");
+                    $(this).children().css('font-weight', "bold");
+
+                    $('#finder-image').mapster('highlight', lastChar);
+                    $('#finder-image').mapster('tooltip', lastChar);
+                }
+                else {
+                    $('#finder-image').mapster('highlight', false);
+                    $(this).children().css('color', "black");
+                    $(this).children().css('font-weight', "normal");
+                }
+            }
+    );
+</script>
+</body>
+</html>
