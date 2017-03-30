@@ -2,6 +2,7 @@
 
 ### Sources
 [jQuery (v1.12.4)](https://code.jquery.com/)
+
 [imagemapster](http://www.outsharked.com/imagemapster/)
 
 ---
