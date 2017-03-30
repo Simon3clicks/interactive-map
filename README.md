@@ -15,4 +15,4 @@ De tooltip moet verticaal altijd net boven de area komen, en horizontaal op 50% 
 ---
 
 ### Demo
-[link](https://persconline.github.io/interactive-map/)
+[Link](https://persconline.github.io/interactive-map/)
